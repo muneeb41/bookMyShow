@@ -179,6 +179,7 @@ export const MyProvider = ({children})=>{
               setLastBooking(res.data.data);
             localStorage.setItem('lastBooking', JSON.stringify(res.data.data));
             }else{
+              console.log(res);
               toast.warn('there is problem in the server. \n please try again');
             }
             
