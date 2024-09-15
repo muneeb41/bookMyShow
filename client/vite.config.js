@@ -9,7 +9,7 @@ export default defineConfig({
     proxy: {
       // Proxy all API calls to localhost:8080
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'https://bookmyshow-5off.onrender.com',
         changeOrigin: true,
       },
     },

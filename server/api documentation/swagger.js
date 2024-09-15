@@ -12,7 +12,7 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: 'http://localhost:8080/',
+      url: 'https://bookmyshow-5off.onrender.com',
       description: 'API server',
     },
   ],
