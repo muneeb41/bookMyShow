@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware setup
 app.use(express.json());  // Parse incoming JSON requests
-app.use(cors());   // Enable Cross-Origin Resource Sharing
+app.use(cors({ origin: 'https://bookmyshow-frontend-d6fh.onrender.com' }));   // Enable Cross-Origin Resource Sharing
 
 
 
