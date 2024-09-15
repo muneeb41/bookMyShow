@@ -174,6 +174,7 @@ export const MyProvider = ({children})=>{
             
             resetForm();
             const res =  await  axios.post('/api/booking',payload);
+            console.log(res);
             if(res.data.status == 200){
               setLastBooking(res.data.data);
             localStorage.setItem('lastBooking', JSON.stringify(res.data.data));
