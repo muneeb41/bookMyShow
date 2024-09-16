@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': {
+      '^/api': {
         target: "https://bookmyshow-5off.onrender.com",  // backend link
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
@@ -40,7 +40,7 @@ export default defineConfig({
   test: {
     environment: 'jsdom',  // For testing DOM-related code or React components
     globals: true,         // Enables global test APIs like `describe`, `it`, `expect`
-    include: ['src/test/**/*.test.jsx'], // Adjust to your actual test file path
+    include: ['src/test/**/*.test.jsx'], 
   },
 });
 
