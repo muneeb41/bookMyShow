@@ -60,6 +60,10 @@ const LastBooking = () => {
           </div>
         )}
       </div>
+        <div className="flex flex-row justify-center gap-4 flex-wrap sm:gap-12 ">
+        <a href="https://bookmyshow-5off.onrender.com/api-docs" target="blank">
+             <button className="mt-5 bg-blue-500 mb-3 box-shadow-dark-main text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600 active:bg-blue-700 focus:outline-none  transition">API Docs</button>
+          </a>
       {lastBooking && (
         <button
           className="mt-5 bg-yellow-400 mb-3 box-shadow-dark-main text-white font-bold py-2 px-6 rounded-lg hover:bg-yellow-500 active:bg-yellow-600 focus:outline-none  transition"
@@ -68,6 +72,7 @@ const LastBooking = () => {
           Clear
         </button>
       )}
+        </div>
     </div>
   );
 };
