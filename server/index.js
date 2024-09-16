@@ -19,7 +19,7 @@ app.use(cors());   // Enable Cross-Origin Resource Sharing
 connectionDB();
 
 // set up Routes 
-app.use('/api',Router);
+app.use('/',Router);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Start the server and listen on the specified port
