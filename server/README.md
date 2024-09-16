@@ -12,9 +12,9 @@ This is a Backend of the Book My Show project where the user data is being fetch
       - for Data storage by MongoDB Connection
 
 ### Endpoint
-- GET -  https://bookmyshowapi-r3ks.onrender.com/api/booking
+- GET -  [https://bookmyshow-5off.onrender.com/api/booking](https://bookmyshow-5off.onrender.com/api/booking)
        - for getting the booking information from the Database
-- POST - https://bookmyshowapi-r3ks.onrender.com/api/booking
+- POST - [https://bookmyshow-5off.onrender.com/api/booking](https://bookmyshow-5off.onrender.com/api/booking)
        - for sending the booking information to the Database 
 
 ### Installation
@@ -22,8 +22,8 @@ This is a Backend of the Book My Show project where the user data is being fetch
 1. Clone the repository from GitHub:
 
 ```
-git clone https://github.com/mehultech1995/BookMyShow-BackEnd.git
-cd BookMyShow-BackEnd
+git clone https://github.com/muneeb41/bookMyShow.git
+cd BookMyShow-server
 ```
 
 2. Install the required dependencies:
@@ -44,7 +44,7 @@ npm install
 
    ```
    PORT=8080                  # The port on which the application will run
-   MONGODB_URI=your_uri_here  # The MongoDB connection string
+   
    ```
 
 ## Usage
@@ -55,7 +55,7 @@ npm install
 npm start
 ```
 
-2. Access the BookMyShow-FrontEnd application in your web browser at `http://localhost:3000`.
+2. Access the BookMyShow-FrontEnd application in your web browser at `http://localhost:5173`.
 
 3. Browse the list of available movies and select a movie to view available showtimes.
 
@@ -71,8 +71,6 @@ The BookMyShow project uses the following technologies:
 
 - Node.js and Express.js for the server-side application.
 - MongoDB with Mongoose for permanent data storage.
-- Webpack for bundling and managing frontend assets.
-- Babel for transpiling modern JavaScript code for better browser compatibility.
 - React for building the user interface.
 
 

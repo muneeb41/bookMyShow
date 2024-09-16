@@ -4,7 +4,7 @@
 
 <h3 align="center">
   Book My Show Website preview <br/>
-  <a href="![image](https://github.com/user-attachments/assets/63da3bb7-a83a-4fbe-8c35-aa325d303191)" target="_blank"><img alt="Demo" src="redme-Img.png" /> </a>
+  ![image](https://github.com/user-attachments/assets/c1cf0c07-2457-457d-98a0-bf42c3b43914)
 </h3>
 
 <br>
@@ -14,7 +14,7 @@ The movie booked by the user will be stored in the database and is retrieved and
 
 
 ## 📖 Website's Live URL  
-  [https://mehultech1995.github.io/BookMyShow/ ](https://mehultech1995.github.io/BookMyShow-FrontEnd/) 
+  [Frontend web link](https://bookmyshow-mzlb.onrender.com)
   (You can just click on URL to visit the website)
 
 
@@ -27,8 +27,6 @@ The movie booked by the user will be stored in the database and is retrieved and
     Used for making API calls.
 - #### Context API
     for managing states and props.
-- #### var()
-    for global color.
 - #### React-Toastify
     for showing a Success alert on booking successfully and an error alert for any error to the user.
 
