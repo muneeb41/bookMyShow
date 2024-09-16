@@ -1,7 +1,6 @@
 import { createContext, useState ,useEffect} from "react";
 import { toast } from 'react-toastify';
 import { moviesList ,slots  } from '../data.js'
-import audioPath from '/result_success.mp3'
 import axios from 'axios';
 
 
@@ -169,8 +168,6 @@ export const MyProvider = ({children})=>{
               slot : slots[slotSelected],
               seats : seatSelected
             }
-            const audio = new Audio(audioPath);
-            audio.play()
             
             resetForm();
             const res =  await  axios.post('/api/booking',payload);
