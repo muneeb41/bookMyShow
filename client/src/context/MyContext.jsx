@@ -2,7 +2,7 @@ import { createContext, useState ,useEffect} from "react";
 import { toast } from 'react-toastify';
 import { moviesList ,slots  } from '../data.js'
 import axios from 'axios';
-
+import audioPath from '/result_success.mp3'
 
 
 // Create a context
@@ -168,9 +168,10 @@ export const MyProvider = ({children})=>{
               slot : slots[slotSelected],
               seats : seatSelected
             }
-            
+            const audio = new Audio(audioPath);
+            audio.play()
             resetForm();
-            const res =  await  axios.post('/api/booking',payload);
+            const res =  await  axios.post('https://bookmyshow-5off.onrender.com/api/booking',payload);
             if(res.data.status == 200){
               setLastBooking(res.data.data);
             localStorage.setItem('lastBooking', JSON.stringify(res.data.data));
