@@ -174,13 +174,10 @@ export const MyProvider = ({children})=>{
             
             resetForm();
             const res =  await  axios.post('/api/booking',payload);
-            console.log(res);
             if(res.data.status == 200){
               setLastBooking(res.data.data);
             localStorage.setItem('lastBooking', JSON.stringify(res.data.data));
-            console.log('it working')
             }else{
-              console.log(res);
               toast.warn('there is problem in the server. \n please try again');
             }
             
